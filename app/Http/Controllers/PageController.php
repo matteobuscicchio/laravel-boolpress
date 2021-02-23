@@ -7,12 +7,9 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     //
-    public function Home()
+    public function home()
     {
         return view('pages.home');
     }
-    public function Article()
-    {
-        return view('pages.article');
-    }
+
 }
