@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('articles', 'api\ArticlesController@index');
-Route::get('categories', 'api\CategoriesController@index');
-Route::get('tags', 'api\TagsController@index');
+Route::get('art', 'API\ArticlesController@index');
+Route::get('cat', 'API\CategoriesController@index');
+Route::get('tg', 'API\TagsController@index');

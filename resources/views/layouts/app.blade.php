@@ -7,8 +7,9 @@
                 <a href="{{route('categories.index')}}">Categories</a>   
                 <a href="{{route('tags.index')}}">Tag</a>
             </nav>
-            <main>
-                @yield('content')
-            </main>
         </div>
+        <main>
+            @yield('content')
+            @yield('content_table')
+        </main>
 @include('layouts.footer')

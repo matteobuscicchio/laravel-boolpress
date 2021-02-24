@@ -11,7 +11,8 @@ class CategoriesController extends Controller
     public function index()
     {
         return response()->json([
-            'data'=> App\Categories::all() 
+            'success' => true,
+            'data'=> Categories::all() 
         ], 200);
     }
 

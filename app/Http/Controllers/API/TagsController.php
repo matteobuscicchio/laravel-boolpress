@@ -11,7 +11,8 @@ class TagsController extends Controller
     public function index()
     {
         return response()->json([
-            'data'=> App\Tags::all() 
+            'success' => true,
+            'data'=> Tags::all() 
         ], 200);
     }
 

@@ -11,7 +11,8 @@ class ArticlesController extends Controller
     public function index()
     {
         return response()->json([
-            'data'=> App\Article::all() 
+            'success' => true,
+            'data'=> Article::all() 
         ], 200);
     }
 
