@@ -6,6 +6,7 @@
                     <div class="card-header">
                         <h2>{{ article.title }}</h2>
                         <h5>{{ article.author }}</h5>
+                        <span>{{ article.id_category }}</span>
                     </div>
 
                     <div class="card-body">
@@ -26,7 +27,6 @@
         },
         mounted() {
             axios.get('api/articles').then(response => {
-                // console.log(response.data.response);
                 this.articles = response.data.response;
             }).catch(error => {
                 console.log(error);

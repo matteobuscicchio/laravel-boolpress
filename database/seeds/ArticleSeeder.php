@@ -18,6 +18,7 @@ class ArticleSeeder extends Seeder
             $article->author = $faker->name();
             $article->title = $faker->word();
             $article->body = $faker->text();
+            $article->id_category = $faker->numberBetween(1, 15);
             $article->save();
         }
     }
