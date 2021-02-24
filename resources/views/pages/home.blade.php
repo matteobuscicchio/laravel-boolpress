@@ -5,8 +5,5 @@
     <div class="title m-b-md">
         Home page
     </div>
-
-    <!-- <div class="links">
-    </div> -->
 </div>
 @endsection
